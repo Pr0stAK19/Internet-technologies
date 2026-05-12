@@ -13,59 +13,109 @@
 <div class="leaves-layer"></div>
 
 <header class="fixed-header">
-    <nav>
-        <ul class="main-menu">
+    <nav class="nav-container">
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="main-menu" id="mainMenu">
             <li><a href="index.html">Главная</a></li>
             <li><a href="portfolio.html">Портфолио</a></li>
             <li><a href="about.html">О себе</a></li>
-            <li><a href="small_motherland.html" class="active">Моя малая родина</a></li>
+            <li><a href="small_motherland.html"class="active">Моя малая родина</a></li>
             <li><a href="contacts.html">Контакты</a></li>
         </ul>
     </nav>
 </header>
+
 
 <div class="content-wrapper">
     <main class="content-container">
         <h1 class="expressive-title">Моя малая родина</h1>
         <p class="subtitle">Вологда — город, где я родился и живу</p>
 
-        <div class="motherland-content">
-            <div class="photo-frame">
-                <img src="images/vologda.jpg" alt="Вологда" class="profile-photo" onerror="this.src='images/my_photo.jpg'">
-            </div>
-
-            <div class="motherland-text">
-                <h2>О городе</h2>
-                <p>Вологда — один из старейших городов Русского Севера, основанный в 1147 году. Город расположен в 450 километрах от Москвы и является крупным культурным, научным и промышленным центром Вологодской области.</p>
-
-                <h2>Достопримечательности</h2>
-                <p>Вологда знаменита своим архитектурным наследием. Вологодский кремль, Софийский собор, Спасо-Прилуцкий монастырь — лишь малая часть исторических памятников, которые можно увидеть в городе. Особую известность городу приносит вологодское кружево — уникальный народный промысел, известный далеко за пределами России.</p>
-
-                <h2>Мои любимые места</h2>
-                <p>Больше всего в родном городе я люблю гулять по набережной реки Вологды, особенно в летнее время. Также часто бываю в Кремлёвском саду и на площади Революции. В этих местах чувствуется особая атмосфера нашего города — спокойная и уютная.</p>
-
-                <h2>Почему я люблю Вологду</h2>
-                <p>Вологда для меня — это не просто город на карте. Это место, где я вырос, где живут мои родные и друзья. Здесь спокойная и размеренная жизнь, красивейшая природа и самые вкусные в мире пряники! Я горжусь своей малой родиной и всегда рад возвращаться сюда после поездок.</p>
-
-                <h2>Интересные факты</h2>
-                <ul class="skills-list">
-                    <li>Вологда старше Москвы на несколько лет</li>
-                    <li>Здесь находится один из крупнейших в России драматических театров</li>
-                    <li>Вологодское масло и кружево известны по всему миру</li>
-                    <li>Через город проходит трасса М8 "Холмогоры" — одна из главных дорог Русского Севера</li>
-                </ul>
-            </div>
+        <div class="motherland-text">
+    <div class="info-row">
+        <div class="photo-frame">
+            <img src="images/vologda.jpg" alt="Вологда" class="profile-photo" onerror="this.src='images/my_photo.jpg'">
         </div>
+        <div class="text-block">
+            <h2>О городе</h2>
+            <p>Вологда — один из старейших городов Русского Севера, основанный в 1147 году. Город расположен в 450 километрах от Москвы и является крупным культурным, научным и промышленным центром Вологодской области.</p>
+        </div>
+    </div>
+
+    <div class="info-row">
+        <div class="photo-frame">
+            <img src="images/krujevo.jpg" alt="Вологодское кружево" class="profile-photo" onerror="this.src='images/krujevo.jpg'">
+        </div>
+        <div class="text-block">
+            <h2>Достопримечательности</h2>
+            <p>Вологда знаменита своим архитектурным наследием. Вологодский кремль, Софийский собор, Спасо-Прилуцкий монастырь — лишь малая часть исторических памятников, которые можно увидеть в городе. Особую известность городу приносит вологодское кружево.</p>
+        </div>
+    </div>
+
+    <div class="info-row">
+        <div class="photo-frame">
+            <img src="images/sad.jpg" alt="Кремлёвский сад" class="profile-photo" onerror="this.src='images/sad.jpg'">
+        </div>
+        <div class="text-block">
+            <h2>Мои любимые места</h2>
+            <p>Больше всего в родном городе я люблю гулять по набережной реки Вологды, особенно в летнее время. Также часто бываю в Кремлёвском саду и на площади Революции.</p>
+        </div>
+    </div>
+
+    <div class="info-row">
+        <div class="photo-frame">
+            <img src="images/vologda2.jpg" alt="Вологда" class="profile-photo" onerror="this.src='images/vologda2.jpg'">
+        </div>
+        <div class="text-block">
+            <h2>Интересные факты</h2>
+            <ul class="skills-list">
+                <li>Вологда старше Москвы на несколько лет</li>
+                <li>Здесь находится один из крупнейших в России театров</li>
+                <li>Вологодское масло и кружево известны по всему миру</li>
+                <li>Трасса М8 "Холмогоры" проходит через город</li>
+            </ul>
+        </div>
+    </div>
+</div>
     </main>
 </div>
 
-<footer class="fixed-footer">
+<footer class="site-footer">
     <div class="footer-content">
-        <span>© 2026 Коновалов Андрей</span>
-        <a href="https://pm.vogu35.ru/" class="dept-link">Кафедра ПМ</a>
-        <span id="visitor-counter">Посетителей: 0</span>
-        <span>Почта для связи: andre.konovalof@yandex.ru</span>
+        <div class="footer-info">
+            <span>© 2026 Коновалов Андрей</span>
+            <a href="https://pm.vogu35.ru/" class="dept-link" target="_blank">Кафедра ПМ</a>
+        </div>
+        
+        <div class="footer-counter">
+            <div id="yandex-metrica-informer">
+                <span>Счетчик Метрики</span> 
+            </div>
+        </div>
+
+        <div class="footer-contacts">
+            <span>andre.konovalof@yandex.ru</span>
+        </div>
     </div>
+    
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(XXXXXXXX, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+       });
+    </script>
 </footer>
 
 <a href="#" class="scroll-top" id="scrollTop" aria-label="Наверх">↑</a>

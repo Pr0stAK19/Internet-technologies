@@ -13,8 +13,14 @@
 <div class="leaves-layer"></div>
 
 <header class="fixed-header">
-    <nav>
-        <ul class="main-menu">
+    <nav class="nav-container">
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="main-menu" id="mainMenu">
             <li><a href="index.html">Главная</a></li>
             <li><a href="portfolio.html" class="active">Портфолио</a></li>
             <li><a href="about.html">О себе</a></li>
@@ -30,76 +36,108 @@
         <p class="subtitle">Некоторые работы, выполненные в процессе обучения</p>
 
         <div class="portfolio-grid">
+            <!-- Проект 1: Система управления библиотекой -->
             <div class="portfolio-item">
-                <h3> Система управления библиотекой</h3>
-                <p>Разработка на Java с использованием базы данных H2. Реализованы CRUD операции, поиск и фильтрация книг, система авторизации пользователей с разными ролями (читатель, библиотекарь, администратор). Проект был выполнен в рамках курсовой работы.</p>
+                <div class="portfolio-image">
+                    <img src="images/H2_logo.png" alt="H2" onerror="this.src='images/placeholder.jpg'">
+                </div>
+                <h3>Система управления библиотекой</h3>
+                <p>Разработка на Java с использованием базы данных H2. Реализованы CRUD операции, поиск и фильтрация книг, система авторизации пользователей с разными ролями.</p>
                 <div class="tech-tags">
                     <span>Java</span>
                     <span>H2 Database</span>
                     <span>Swing</span>
                 </div>
-            </div>
-
-            <div class="portfolio-item">
-                <h3> Игра на Arduino</h3>
-                <p>Создание игры "Змейка" на базе Arduino Uno с использованием светодиодной матрицы 8x8 и кнопок управления. Разработаны несколько игровых режимов, система подсчета очков и таблица рекордов.</p>
-                <div class="tech-tags">
-                    <span>C++</span>
-                    <span>Arduino</span>
-                    <span>Электроника</span>
+                <div class="project-links">
+                    <a href="https://www.javaguides.net/2019/08/java-h2-database-tutorial.html" class="project-link" target="_blank">🔗 Туториал</a>
+                    
                 </div>
             </div>
 
+            <!-- Проект 2: Игра на Arduino -->
             <div class="portfolio-item">
-                <h3> Системное приложение на MASM32</h3>
-                <p>Разработка приложения для работы с файловой системой на ассемблере MASM32 с использованием WinAPI. Реализованы функции просмотра директорий, копирования и перемещения файлов.</p>
+                <div class="portfolio-image">
+                    <img src="images/Sirius.JPG" alt="Игра на Arduino" onerror="this.src='images/placeholder.jpg'">
+                </div>
+                <h3>"Тепловизорный сторож" на Arduino</h3>
+                <p>Создание системы тепловизорного контроля состояния стенок котельных. Проект для заказчика АО Вологдагортеплосеть.</p>
+                <div class="tech-tags">
+                    <span>Arduino</span>
+                    <span>Электроника</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Pr0stAK19/SiriusSummer" class="project-link" target="_blank">🔗 GitHub</a>
+                </div>
+            </div>
+
+            <!-- Проект 3: Системное приложение на MASM32 -->
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/Masm32.png" alt="Персональный сайт" onerror="this.src='images/placeholder.jpg'">
+                </div>
+                <h3>💻 Системное приложение на MASM32</h3>
+                <p>Разработка приложения для работы с файловой системой на ассемблере MASM32 с использованием WinAPI. Реализованы функции просмотра директорий и управления файлами.</p>
                 <div class="tech-tags">
                     <span>MASM32</span>
                     <span>WinAPI</span>
                     <span>Assembler</span>
                 </div>
+                
             </div>
 
+            <!-- Проект 4: Персональный сайт-портфолио -->
             <div class="portfolio-item">
-                <h3> Персональный сайт-портфолио</h3>
-                <p>Разработка современного многостраничного сайта с эффектами параллакса, адаптивным дизайном и анимациями. Включает главную страницу, портфолио, страницу "О себе" и контакты.</p>
+                <div class="portfolio-image">
+                    <img src="images/syte.png" alt="Персональный сайт" onerror="this.src='images/placeholder.jpg'">
+                </div>
+                <h3>Персональный сайт-портфолио</h3>
+                <p>Разработка современного многостраничного сайта с эффектами параллакса, адаптивным дизайном и анимациями. Включает главную страницу, портфолио и контакты.</p>
                 <div class="tech-tags">
                     <span>HTML5</span>
                     <span>CSS3</span>
                     <span>JavaScript</span>
                 </div>
-            </div>
-
-            <div class="portfolio-item">
-                <h3> Анализ данных на Python</h3>
-                <p>Проект по анализу данных о продажах с использованием библиотек pandas, matplotlib и seaborn. Проведена очистка данных, построены графики и дашборды для визуализации ключевых метрик.</p>
-                <div class="tech-tags">
-                    <span>Python</span>
-                    <span>Pandas</span>
-                    <span>Matplotlib</span>
+                <div class="project-links">
+                    <a href="https://github.com/Pr0stAK19/Internet-technologies" class="project-link" target="_blank">🔗 GitHub</a>
                 </div>
             </div>
 
-            <div class="portfolio-item">
-                <h3> База данных для интернет-магазина</h3>
-                <p>Проектирование и реализация реляционной базы данных для интернет-магазина электроники в СУБД PostgreSQL. Созданы сложные запросы, представления, триггеры и хранимые процедуры.</p>
-                <div class="tech-tags">
-                    <span>PostgreSQL</span>
-                    <span>SQL</span>
-                    <span>PgAdmin</span>
-                </div>
             </div>
         </div>
     </main>
 </div>
 
-<footer class="fixed-footer">
+<footer class="site-footer">
     <div class="footer-content">
-        <span>© 2026 Коновалов Андрей</span>
-        <a href="https://pm.vogu35.ru/" class="dept-link">Кафедра ПМ</a>
-        <span id="visitor-counter">Посетителей: 0</span>
-        <span>Почта для связи: andre.konovalof@yandex.ru</span>
+        <div class="footer-info">
+            <span>© 2026 Коновалов Андрей</span>
+            <a href="https://pm.vogu35.ru/" class="dept-link" target="_blank">Кафедра ПМ</a>
+        </div>
+        
+        <div class="footer-counter">
+            <div id="yandex-metrica-informer">
+                <span>Счетчик Метрики</span> 
+            </div>
+        </div>
+
+        <div class="footer-contacts">
+            <span>andre.konovalof@yandex.ru</span>
+        </div>
     </div>
+    
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(XXXXXXXX, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+       });
+    </script>
 </footer>
 
 <a href="#" class="scroll-top" id="scrollTop" aria-label="Наверх">↑</a>
