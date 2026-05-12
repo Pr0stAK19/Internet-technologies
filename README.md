@@ -1,6 +1,6 @@
 # Персональный сайт-портфолио
 **Студент:** Коновалов Андрей  
-**Технологии:** HTML5, CSS3 (BEM, Flexbox, Parallax), JavaScript (Vanilla).
+**Технологии:** HTML5, CSS3 (BEM, Flexbox, Parallax), JavaScript (Vanilla), Яндекс Метрика.
 
 ## Структура
 - `index.html` — Главная страница .
