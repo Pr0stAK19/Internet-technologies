@@ -44,7 +44,7 @@ html {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Растягиваем тело на всю высоту экрана */
-    padding-top: 80px; /* Отступ под шапку */
+    padding-top: 50px; /* Отступ под шапку */
     padding-bottom: 0; /* Убираем фиксированный отступ снизу */
 }
 
@@ -138,11 +138,21 @@ html {
     transition: all 0.3s linear;
 }
 
-.content-container {
+/* .content-container {
     position: relative;
     max-width: var(--container-max-width);
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    padding: 40px;
+    z-index: 1;
+} */
+ .content-container {
+    position: relative;
+    max-width: var(--container-max-width);
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(5px);
     border-radius: 25px;
     padding: 40px;
@@ -160,7 +170,7 @@ html {
 .info-row {
     display: flex;
     align-items: flex-start; /* Выравнивание по верхнему краю текста */
-    gap: 30px;               /* Расстояние между картинкой и текстом */
+    gap: 10px;               /* Расстояние между картинкой и текстом */
     margin-bottom: 40px;     /* Расстояние между секциями */
 }
 
@@ -170,8 +180,10 @@ html {
 }
 
 .text-block h2 {
-    margin-top: 0;           /* Убираем отступ сверху у заголовка для ровности с фото */
+    margin-top: 0px;           /* Убираем отступ сверху у заголовка для ровности с фото */
 }
+
+
 
 /* Уточняем размеры фото-рамки, чтобы они не «скакали» */
 .info-row .photo-frame {
@@ -209,7 +221,7 @@ h1, .expressive-title {
     font-size: var(--font-size-h1);
     font-weight: 700;
     color: var(--accent-color);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: left;
     line-height: 1.3;
 }
@@ -219,7 +231,7 @@ h2 {
     font-size: var(--font-size-h2);
     font-weight: 600;
     color: var(--accent-color);
-    margin: 25px 0 15px 0;
+    margin: 60px 0 10px 0;
     line-height: 1.3;
 }
 
@@ -242,7 +254,7 @@ p, .main-text p, .info-section p, .about-text p, .motherland-text p, .portfolio-
 .subtitle {
     font-size: var(--font-size-large);
     color: #666;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-weight: 400;
 }
 
@@ -521,7 +533,8 @@ p, .main-text p, .info-section p, .about-text p, .motherland-text p, .portfolio-
 
 .contact-icon {
     font-size: 48px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+    margin: 30px;
 }
 
 .contact-card h3 {
@@ -552,7 +565,7 @@ p, .main-text p, .info-section p, .about-text p, .motherland-text p, .portfolio-
     background: rgba(44, 82, 237, 0.1);
     border-radius: 15px;
     padding: 25px;
-    margin-top: 30px;
+    margin-top: 200px;
 }
 
 .contact-note p {
@@ -576,11 +589,12 @@ p, .main-text p, .info-section p, .about-text p, .motherland-text p, .portfolio-
         padding: 20px;
     }
 
+    
     .photo-frame {
         float: none;
         margin: 0 auto 20px auto;
         text-align: center;
-    }
+    } 
 
     .profile-photo {
         width: 220px;
@@ -609,10 +623,17 @@ p, .main-text p, .info-section p, .about-text p, .motherland-text p, .portfolio-
     .portfolio-item,
     .contact-card {
         padding: 20px;
-    } */
+    } 
 /* } */
 /* --- Адаптивность для экстремального ЗУМА (300-500%) --- */
 @media (max-width: 768px) {
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Растягиваем тело на всю высоту экрана */
+    padding-top: 10px; /* Отступ под шапку */
+    padding-bottom: 0; /* Убираем фиксированный отступ снизу */
+}
     /* Делаем шапку тоньше */
     .fixed-header {
         height: 50px;
@@ -620,6 +641,47 @@ p, .main-text p, .info-section p, .about-text p, .motherland-text p, .portfolio-
         padding: 0;
     }
 
+    .photo-frame {
+        float: none;
+        margin: 0 auto 20px auto;
+        text-align: center;
+    } 
+
+    .info-row {
+    display: flex;
+    align-items: flex-start; /* Выравнивание по верхнему краю текста */
+    gap: 30px;               /* Расстояние между картинкой и текстом */
+    margin-bottom: 100px;     /* Расстояние между секциями */
+}
+
+    .profile-photo {
+        width: 260px;
+    }
+    
+    h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--font-size-h2);
+    font-weight: 600;
+    color: var(--accent-color);
+    margin: 0 px 0 0px 0;
+    line-height: 1.3;
+}
+
+    .portfolio-item {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .portfolio-grid,
+    .contacts-grid {
+        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 30px;
+        margin-top: 10px;
+    }   
     .menu-toggle {
         display: flex;
         z-index: 1001;
@@ -644,6 +706,12 @@ p, .main-text p, .info-section p, .about-text p, .motherland-text p, .portfolio-
     .main-menu.active {
         display: flex;
     }
+
+    .contact-icon {
+        font-size: 48px;
+        margin-bottom: 35px;
+         margin: 40px;
+}
 
     .main-menu li {
         flex: 1; /* Каждая кнопка забирает равную долю от ОСТАТКА экрана */
